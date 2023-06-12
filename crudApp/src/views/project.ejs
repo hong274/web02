@@ -1,0 +1,40 @@
+<html>
+<head>
+  <title>Welcome to my Website</title>
+  <link rel="stylesheet" href="/css/home.css">
+</head>
+
+<body>
+  <header>
+    <%- include('partials/header', { activePage: 'home' }) %>
+  </header>
+
+  <div class="separator" style="margin-top: 0px; margin-bottom: 0px;"></div>
+  <!-- Other content -->
+  <div class="container">
+    <div class="sidebar">
+      <img src="/p_1.jpg" alt="Image" width="100%" height="408px" style="border-radius: 15px;">
+    </div>
+
+    <div class="main-content">
+        <div class="column">
+          <img src="/project_1.jpg" alt="Project 1" height="200px">
+          <p>Project 1: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="column">
+          <img src="/project_2.jpg" alt="Project 2" height="200px">
+          <p>Project 2: Nulla nec lectus euismod, tincidunt magna non.</p>
+        </div>
+        <div class="column">
+          <img src="/project_3.jpg" alt="Project 3" height="200px">
+          <p>Project 3: Sed sed sagittis nisi, ut pellentesque elit.</p>
+        </div>
+      </div>  
+
+  </div>
+
+  <footer> 
+    <%- include('partials/footer', { activePage: 'home' }) %>    
+  </footer>
+</body>
+</html>

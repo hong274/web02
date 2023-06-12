@@ -1,0 +1,78 @@
+<html>
+<head>
+  <title>Welcome to my Website</title>
+  <link rel="stylesheet" href="/css/home.css">  
+</head>
+
+<body>
+  <header>
+    <%- include('partials/header', { activePage: 'home' }) %>
+  </header>
+
+  <div class="separator" class="margin-top: 0px,margin-bottom: 0px"></div>
+  <!-- Other content -->
+  <div class="container">
+    <div class="sidebar">
+      <div class="image-container">
+        <a href="/about"><img src="/about.jpg" alt="Image" height="210px"></a>
+      </div>
+      <div class="text-container">
+        <p></p>
+        <p>I'm an experienced Software 
+          Engineering Technician who 
+          graduated from Centennial 
+          College. Over the past decade, 
+          I've specialized in website 
+          design and computer networks.</p>
+        <p></p>
+        <p></p>
+      </div>
+    </div>
+    <div class="sidebar">      
+      <div class="image-container">
+        <a href="/project"><img src="/project.jpg" alt="Image" height="210px"></a>
+    </div>
+    <div class="text-container">
+      <p></p>
+      <p>These projects have not only 
+        enhanced my technical skills 
+        but also provided me with valuable 
+        handson experience in software 
+        development, web design, and network management.</p>
+      <p></p>
+    </div></div>
+    <div class="sidebar">
+      <div class="image-container">
+        <a href="/services"><img src="/service.jpg" alt="Image" height="210px"></a>
+      </div>
+      <div class="text-container">
+
+        <p>I can provide technical support in 
+          software development, testing, 
+          and maintenance. I offer expertis 
+          -e in coding, debugging, and ensuring 
+          the smooth operation of software 
+           applications.</p>
+        <p></p>
+      </div>
+    </div>
+    <div class="sidebar">
+      <div class="image-container">
+        <a href="/contact"><img src="/contact.jpg" alt="Image" height="210px"></a>
+      </div>
+      <div class="text-container">
+        <p></p>
+        <p>Feel free to reach out to me via email
+          or phone. I am available to discuss 
+          any inquiries, collaboratio
+          -ns, or opportunities
+           you may have. I look forward to hearing from you!</p>  
+      </div>
+    </div>
+  </div>
+
+  <footer> 
+    <%- include('partials/footer', { activePage: 'home' }) %>    
+  </footer>
+</body>
+</html>
